@@ -93,7 +93,7 @@ Meteor.methods({
     }
 
     Tasks.update(taskId, { $set: { checked: setChecked} });
-  }
+  },
   setPrivate: function(taskId, setToPrivate) {
     var task = Tasks.findOne(taskId);
 
